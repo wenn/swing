@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Setup
 if [[ ! -d $HOME/.swing ]]; then
     local root_dir
