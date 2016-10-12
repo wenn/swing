@@ -2,8 +2,6 @@
 
 # Setup
 if [[ ! -d $HOME/.swing ]]; then
-    local root_dir
-
     root_dir="$HOME/.swing"
     mkdir -p $root_dir
 
