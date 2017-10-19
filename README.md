@@ -1,5 +1,5 @@
 # Swing
-Folder manager, swing from one tree to another by their name instead of their folder paths.
+Folder navigator, swing between folders by their name.
 
 ## Setup
 1. Download _setup\_swing.sh_ somewhere (e.g. ~/.scripts/setup\_swing.sh)
