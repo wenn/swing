@@ -66,13 +66,9 @@ function swing() {
             folder_id=$(__swing_get_folder_id $folder_name)
             old_path=$(__swing_get_folder_path $folder_id)
 
-            if [[ -z $old_path ]]; then
-                echo "$folder_id=$folder_path" >> $paths_file
-                echo "$folder_id=$folder_name" >> $names_file
-                echo "Creating \"$folder_name\" for path [$folder_path]"
-            else
-                echo "Fail to create, folder id already exists: $folder_id @ $old_path"
-            fi
+            echo "$folder_id=$folder_path" >> $paths_file
+            echo "$folder_id=$folder_name" >> $names_file
+            echo "Created \"$folder_name\" for path [$folder_path]"
         }
 
         function __swing_write_to_cd() {
