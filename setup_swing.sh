@@ -26,7 +26,7 @@ function __swing_completion() {
     return 0
   fi
 }
-complete -F __swing_completion swing
+complete -F __swing_completion s
 
 
 function s() {
