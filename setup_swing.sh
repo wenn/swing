@@ -21,7 +21,7 @@ function __swing_completion() {
   prev="${COMP_WORDS[COMP_CWORD-1]}"
   opts=$(awk -F'=' '{print $2}' $HOME/.swing/names | tr "\n" " ")
 
-  if [[ ${prev} == "swing" ]] ; then
+  if [[ ${prev} == "s" ]] ; then
     COMPREPLY=( $(compgen -W "${opts}" ${cur}) )
     return 0
   fi
